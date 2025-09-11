@@ -65,6 +65,7 @@ int main() {
 
 
     //Mostrar dados da carta 1
+    
     printf("LEITURA DA CARTA 1: \n");
     printf("Estado: %s \nCódigo: %s \nNome da Cidade: %s \nPopulação: %i \nÁrea: %f \nPIB: %f \nNúmero de Pontos Turísticos: %i \n", estado1, codigo1, nomecidade1, populacao1, area1, pib1, pontos1);
     printf("\n");

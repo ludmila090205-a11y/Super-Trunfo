@@ -96,6 +96,8 @@ int main()
     printf("Pontos turísticos: Carta 1 venceu (%i)\n", x4);
     printf("Densidade populacional: Carta 2 venceu (%i)\n", x5);
     printf("PIB per Capita: Carta 1 venceu (%i)\n", x6);
-    printf("Super Poder: Carta 1 venceu (%i)\n", x7)
-;
+    printf("Super Poder: Carta 1 venceu (%i)\n", x7);
+
+    return 0;
+
 }

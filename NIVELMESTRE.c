@@ -3,7 +3,7 @@
 int main()
 {    // Declaramos as variáveis
     char estado1[2], estado2[2], codigo1[4], codigo2[4], nomecidade1[50], nomecidade2[50];
-    int pontos1, pontos2, x1, x2, x3, x4, x5, x6, x7;
+    int pontos1, pontos2;
     float area1, area2, pib1, pib2, dp1, dp2, pibpc1, pibpc2, superPoder1, superPoder2;
     long int populacao1, populacao2;
 
@@ -56,8 +56,8 @@ int main()
     printf("\n");
 
     // Fórmulas matemáticas(Densidade populacional e PIB per Capita)
-    dp1 = (float)populacao1 / area1;
-    dp2 = (float)populacao2 / area2;
+    dp1 = ((float)populacao1 / area1);
+    dp2 = ((float)populacao2 / area2);
 
     pibpc1 = (float)pib1 / populacao1;
     pibpc2 = (float)pib2 / populacao2;
@@ -80,24 +80,24 @@ int main()
     printf("\n");
 
     //Operadores relacionais
-    x1 = populacao1 > populacao2;
-    x2 = area1 > area2;
-    x3 = pib1 > pib2;
-    x4 = pontos1 > pontos2;
-    x5 = dp2 > dp1;
-    x6 = pibpc1 > pibpc2;
-    x7 = superPoder1 > superPoder2;
-    
-    //Comparação de cartas
-    printf("Comparação de cartas:\n");
-    printf("População: Carta 1 venceu (%i)\n", x1);
-    printf("Área: Carta 1 venceu (%i)\n", x2);
-    printf("PIB: Carta 1 venceu (%i)\n", x3);
-    printf("Pontos turísticos: Carta 1 venceu (%i)\n", x4);
-    printf("Densidade populacional: Carta 2 venceu (%i)\n", x5);
-    printf("PIB per Capita: Carta 1 venceu (%i)\n", x6);
-    printf("Super Poder: Carta 1 venceu (%i)\n", x7);
 
+    printf("\nComparação de Cartas (Atributo: Densidade Populacional): \n\n");
+    printf("Carta 1 - São Paulo (SP): %f \n", &dp1);
+    printf("Carta 2 - Rio de Janeiro (SP): %f \n", &dp2);
+
+    printf(" ");
+    printf("Densidade populacional 1: %f", dp1);
+    printf("Densidade populacional 2: %f", dp2);
+    printf(" ");
+
+
+    if (dp1 > dp2){
+        printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n");
+    } else {
+        printf("Resultado: Carta 1 (São Paulo) venceu!\n");
+    }
+    
     return 0;
+
 
 }

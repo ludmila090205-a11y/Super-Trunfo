@@ -65,6 +65,7 @@ int main()
     superPoder1 = (float) (populacao1 + area1 + pib1 + pontos1 + pibpc1 + dp1);
     superPoder2 = (float) (populacao2 + area2 + pib2 + pontos2 + pibpc2 + dp2);
 
+
     // Mostrar dados da carta 1
     printf("LEITURA DA CARTA 1: \n");
     printf("Estado: %s \nCódigo: %s \nNome da Cidade: %s \nPopulação: %ld \nÁrea: %.2fkm \nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\n", estado1, codigo1, nomecidade1, populacao1, area1, pib1, pontos1);
@@ -72,6 +73,7 @@ int main()
     printf("PIB Per Capita: %.2f reais\n", pibpc1);
     printf("\n");
 
+    
     // Mostrar dados da carta 2
     printf("LEITURA DA CARTA 2: \n");
     printf("Estado: %s \nCódigo: %s \nNome da Cidade: %s \nPopulação: %ld \nÁrea: %.2fkm \nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\n", estado2, codigo2, nomecidade2, populacao2, area2, pib2, pontos2);
@@ -82,13 +84,8 @@ int main()
     //Operadores relacionais
 
     printf("\nComparação de Cartas (Atributo: Densidade Populacional): \n\n");
-    printf("Carta 1 - São Paulo (SP): %f \n", &dp1);
-    printf("Carta 2 - Rio de Janeiro (SP): %f \n", &dp2);
-
-    printf(" ");
-    printf("Densidade populacional 1: %f", dp1);
-    printf("Densidade populacional 2: %f", dp2);
-    printf(" ");
+    printf("Carta 1 - São Paulo (SP): %f\n", dp1);
+    printf("Carta 2 - Rio de Janeiro (SP): %f\n", dp2);
 
 
     if (dp1 > dp2){
